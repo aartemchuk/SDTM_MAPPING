@@ -1,5 +1,5 @@
 
-%include 'C:\Users\AArtemchuk\Documents\My SAS Files\9.4\import_macros.sas';
+%include '<path to include macro %import_macros>';
 
 
 %macro auto_mapping(func_outlib_name = ,
