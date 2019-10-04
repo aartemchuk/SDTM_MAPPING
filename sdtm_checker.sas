@@ -175,10 +175,10 @@
 
 %mend sdtm_check;
 
+%sdtm_check(func_outlib_name       = <lib.ds_name.user_name for function>,
+            dsin_sdtm              = <SDTM dataset lib.name>,
+            variable_list          = <space-delimited list of variables>,
+		     sdtm_term_xlsfile_path = "<SDTM Controlled Terminology file path>",
+		     sdtm_term_sheet_name   = "<SDTM Controlled Terminology Excel sheet>",
+		     report_file_path       = "<Path to output files with report>");
 
-%sdtm_check(func_outlib_name       = work.userfuncs.char,
-            dsin_sdtm              = sdtm.ae,
-            variable_list          = AEACN AEDLTYN AEOUT ,
-			sdtm_term_xlsfile_path = "c:\Users\AArtemchuk\Documents\tmp\SDTM_Terminology.xls",
-			sdtm_term_sheet_name   = "SDTM Terminology 2019-06-28",
-			report_file_path       = "c:\Users\AArtemchuk\Documents\tmp");
