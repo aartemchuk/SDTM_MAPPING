@@ -145,17 +145,18 @@
 
 options mprint symbolgen;
 
-%auto_mapping(func_outlib_name       = work.userfuncs.char,
-			  sdtm_term_xlsfile_path = "c:\Users\AArtemchuk\Documents\tmp\SDTM_Terminology.xls",
-			  sdtm_term_sheet_name   = "SDTM Terminology 2019-06-28",
-			  crf_page_path          = "c:\Users\AArtemchuk\Documents\tmp",
-			  print_test_pagenum     = ,
-			  keep_or_drop_text      = "field name label pre-filled values",/*do not repeat values*/
-			  keep_or_drop_mode      = DROP, /*KEEP | DROP*/
-			  start_pagenum          = 60,
-			  end_pagenum            = 62,
-			  tbox_line_end          = 505,
-			  corr_tbox_end          = 3,
-			  del_prev_page_fl       = Y,
-			  output_code_path       = "c:\Users\AArtemchuk\Documents\tmp",
-			  show_temp_datasets     = Y);
+%auto_mapping(func_outlib_name       = <area.ds_name.user_name for function>,
+		 	 sdtm_term_xlsfile_path = "<SDTM Controlled Terminology file path>",
+		  	 sdtm_term_sheet_name   = "<SDTM Controlled Terminology Excel sheet>",
+	        	 crf_page_path          = "<Path to CRF pages in CSV>",
+		  	 print_test_pagenum     = <enter any number to print test page>,
+	        	 keep_or_drop_text      = "<word pattern for keep or drop>",
+		  	 keep_or_drop_mode      = <KEEP | DROP: mode for a pattern>, 
+	        	 start_pagenum          = <start page number>,
+		  	 end_pagenum            = <end page number>,
+		  	 tbox_line_end          = <tick-box word end position>,
+		  	 corr_tbox_end          = <tick-box word end pos. correction>,
+		  	 del_prev_page_fl       = <Y | N: delete prev. file with code?>,
+		  	 output_code_path       = "<Path to output files with code>",
+		  	 show_temp_datasets     = <Y | N: show/hide temp. datasets?> );
+
