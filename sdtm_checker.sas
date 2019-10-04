@@ -1,4 +1,4 @@
-%include 'C:\Users\AArtemchuk\Documents\My SAS Files\9.4\import_macros.sas';
+%include '<path io import_macros.sas program>';
 
 %macro sdtm_check(func_outlib_name       = ,
 						  dsin_sdtm              = ,
